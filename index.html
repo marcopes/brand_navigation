@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.scss">
+    <title>This is the title of the webpage!</title>
+  </head>
+  <body>
+
+    
+    <script type="text/javascript">
+
+    function goToPage2(clicked_id) {
+        console.log(clicked_id);
+        let el = document.getElementById(clicked_id)
+        console.log(el)
+
+        let elcoords = el.getBoundingClientRect()
+
+        let text = el.innerText
+
+        console.log("TEXT: ",text)
+
+        console.log(elcoords)
+
+        let left = elcoords.left
+        let top = elcoords.top
+
+        console.log("left: ", left)
+        console.log("top: ", top)
+
+        localStorage.setItem("text", text)
+        localStorage.setItem("left", left);
+        localStorage.setItem("top", top);
+
+        window.location.href ='pages/page2.html';
+    }
+
+
+    function goToPage3(clicked_id) {
+        console.log(clicked_id);
+        let el = document.getElementById(clicked_id)
+        console.log(el)
+
+        let elcoords = el.getBoundingClientRect()
+
+        let text = el.innerText
+
+        console.log("TEXT: ",text)
+
+        console.log(elcoords)
+
+        let left = elcoords.left
+        let top = elcoords.top
+
+        console.log("left: ", left)
+        console.log("top: ", top)
+
+        localStorage.setItem("text", text)
+        localStorage.setItem("left", left);
+        localStorage.setItem("top", top);
+
+        window.location.href ='pages/page3.html';
+    }
+
+
+    </script>
+
+
+    <div class="block" id="Bulbasaur" onClick="goToPage3(this.id)">
+        <p>BULBASAUR BULBASAUR</p>
+    </div>
+
+    <div class="block" id="Ivysaur" onClick="goToPage2(this.id)">
+        <p>IVYSAUR IVYSAUR</p>
+    </div>
+    
+    <div class="block" id="Venusaur" onClick="goToPage2(this.id)">
+        <p>VENUSAUR VENUSAUR</p>
+    </div>
+    
+    <div class="block" id="Charmander" onClick="goToPage2(this.id)">
+        <p>CHARMENDER CHARMENDER</p>
+    </div>
+    
+    <div class="block" id="CHARMELEON" onClick="goToPage2(this.id)">
+        <p>CHARMELEON CHARMELEON</p>
+    </div>
+
+    <div class="block" id="Charizard" onClick="goToPage2(this.id)">
+        <p>CHARIZARD CHARIZARD</p>
+    </div>
+    
+    <div class="block" id="Squirtle" onClick="goToPage2(this.id)">
+        <p>SQUIRTLE SQUIRTLE</p>
+    </div>
+
+    <div class="block" id="Wartortle" onClick="goToPage2(this.id)" >
+        <p>WARTORTLE WARTORTLE</p>
+    </div>
+    
+    <div class="block" id="Blastoise" onClick="goToPage2(this.id)">
+        <p>BLASTOISE BLASTOISE</p>
+    </div>
+    
+    <div class="block" id="Caterpie" onClick="goToPage2(this.id)">
+        <p>CATERPIE CATERPIE</p>
+    </div>
+    
+    <div class="block" id="Metapod" onClick="goToPage2(this.id)">
+        <p>METAPOD METAPOD</p>
+    </div>
+
+    <div class="block" id="Butterfree" onClick="goToPage2(this.id)">
+        <p>BUTTERFREE BUTTERFREE</p>
+    </div>
+    
+   <div class="block" id="Weedle" onClick="goToPage2(this.id)">
+    <p>WEEDLE WEEDLE</p>
+   </div>
+    
+   <div class="block" id="Kakuna" onClick="goToPage2(this.id)">
+    <p>KAKUNA KAKUNA</p>
+   </div>
+
+   <div class="block" id="Beedrill" onClick="goToPage2(this.id)">
+    <p>BEEDRILL BEEDRILL</p>
+   </div>
+    
+    <div class="block" id="Pidgey" onClick="goToPage2(this.id)">
+        <p>PIDGEY PIDGEY</p>
+    </div>
+
+    <div class="block" id="PIDGEOTTO" onClick="goToPage2(this.id)">
+        <p>PIDGEOTTO PIDGEOTTO</p>
+    </div>
+
+    <div class="block" id="PIDGEOT" onClick="goToPage2(this.id)">
+        <p>PIDGEOT PIDGEOT</p>
+    </div>
+    
+    <div class="block" id="RATTATA" onClick="goToPage2(this.id)">
+        <p>RATTATA RATTATA</p>
+    </div>
+
+
+    <p>Pidgeotto</p>
+    <p>Pidgeot</p>
+    <p>Rattata</p>
+    <p>Raticate</p>
+    <p>Spearow</p>
+    <p>Fearow</p>
+    <p>Ekans</p>
+    <p>Arbok</p>
+
+  </body>
+</html>
+

@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="page3.scss">
+    <title>This is the title of the webpage!</title>
+    <script type="text/javascript">
+        function positioning() {
+            let left = localStorage.getItem("left")
+            console.log(left)
+
+            let top = localStorage.getItem("top")
+            console.log(top)
+
+            var d = document.getElementById('test');
+            d.style.position = "absolute";
+            d.style.left = left+'px';
+            d.style.top = top+'px';
+
+
+            let text = localStorage.getItem("text")
+            console.log(text)
+
+            document.getElementById("test").innerHTML = text;
+            document.getElementById("test").style.color = "white"
+            document.getElementById("test").style.mixBlendMode = "difference"
+            document.getElementById("test").style.paddingLeft = "80px"
+            document.getElementById("test").style.height = "80px"
+            document.getElementById("test").style.width = "100%"
+            document.getElementById("test").style.fontSize = "60px"
+        }
+
+
+        window.onload = positioning;
+    </script>
+
+</head>
+
+<body>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="../imgs/FERRAGAMO_59 sec 16-9KK.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+
+
+    <div class="block" id="test">
+        <p></p>
+    </div>
+
+
+</body>
+
+</html>
